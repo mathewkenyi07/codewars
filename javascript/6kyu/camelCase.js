@@ -39,11 +39,7 @@
     
 
 // }
-console.log(toCamelCase("the-stealth-warrior"));
-// console.log(toCamelCase("the_stealth_warrior"));
-console.log(toCamelCase("The_Stealth_Warrior"));
-console.log(toCamelCase("The_Stealth-Warrior"));
-console.log(toCamelCase("the_stealth_warrior"));
+
 
 
 function toCamelCase(str) {
@@ -64,3 +60,9 @@ function toCamelCase(str) {
 
     return results.join("");
 }
+
+console.log(toCamelCase("the-stealth-warrior"));
+// console.log(toCamelCase("the_stealth_warrior"));
+console.log(toCamelCase("The_Stealth_Warrior"));
+console.log(toCamelCase("The_Stealth-Warrior"));
+console.log(toCamelCase("the_stealth_warrior"));
