@@ -1,0 +1,58 @@
+// Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
+
+// For example (Input --> Output):
+
+// 39 --> 3 (because 3*9 = 27, 2*7 = 14, 1*4 = 4 and 4 has only one digit, there are 3 multiplications)
+// 999 --> 4 (because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2, there are 4 multiplications)
+// 4 --> 0 (because 4 is already a one-digit number, there is no multiplication)
+
+
+// export function persistence(num: number): number[]{
+//  let str : string = num.toString()
+//  let strArray : string[] = str.split("")
+//  let arr : number[] = strArray.map(Number)
+//  let length = arr.length;
+
+//  let count = 0;
+
+
+// function multiply(arr: number[]):number{
+// let multiply = arr.map((item, index, array) => {
+//     return item * item;
+//     count++;
+// });
+   
+// }
+    
+    
+
+// }
+// if (multiply.length>1){
+//     multiply()
+//     count++
+// }
+//  return count;
+ 
+ 
+// }
+// console.log(persistence(200763));
+
+
+export function persistence(num: number): number{
+let count = 0;
+let currentNumber = num;
+
+while(currentNumber >= 10){
+    let arr : number[] = currentNumber.toString().split("").map(Number);
+    currentNumber = arr.reduce((acc,current)=>acc*current,1)
+    console.log(currentNumber);
+    
+    count++;
+}
+ 
+return count;
+ 
+}
+
+
+console.log(persistence(200763));
