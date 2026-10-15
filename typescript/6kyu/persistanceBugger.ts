@@ -7,35 +7,6 @@
 // 4 --> 0 (because 4 is already a one-digit number, there is no multiplication)
 
 
-// export function persistence(num: number): number[]{
-//  let str : string = num.toString()
-//  let strArray : string[] = str.split("")
-//  let arr : number[] = strArray.map(Number)
-//  let length = arr.length;
-
-//  let count = 0;
-
-
-// function multiply(arr: number[]):number{
-// let multiply = arr.map((item, index, array) => {
-//     return item * item;
-//     count++;
-// });
-   
-// }
-    
-    
-
-// }
-// if (multiply.length>1){
-//     multiply()
-//     count++
-// }
-//  return count;
- 
- 
-// }
-// console.log(persistence(200763));
 
 
 export function persistence(num: number): number{
